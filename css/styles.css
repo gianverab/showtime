@@ -1,0 +1,153 @@
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear; }
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em; }
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+body {
+  background-color: #bdc3c7;
+  margin: 0;
+  font-family: "Roboto Slab", sans-serif; }
+
+#app-container {
+  width: 100%;
+  overflow: hidden; }
+  #app-container #app-header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: #2b3e4f;
+    text-align: center;
+    z-index: 10; }
+    #app-container #app-header h1 {
+      line-height: 1.4;
+      margin: 0;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700; }
+    #app-container #app-header p {
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 16px; }
+  #app-container #app-body {
+    padding-top: 90px;
+    min-height: 400px; }
+    #app-container #app-body .search-form {
+      text-align: center;
+      font-size: 20px; }
+      #app-container #app-body .search-form input {
+        width: 100%;
+        border: 1px solid #bdc3c8;
+        padding: 12px 8px;
+        color: #606060;
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 15px; }
+      #app-container #app-body .search-form button {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        background: #fff;
+        color: #00bd9d;
+        border: 2px solid #00bd9d;
+        border-radius: 0px;
+        margin-bottom: 15px;
+        transition: all 0.4s ease-in-out; }
+        #app-container #app-body .search-form button:hover {
+          background-color: #00bd9d;
+          color: #fff; }
+    #app-container #app-body .tv-shows {
+      margin-top: 15px; }
+      #app-container #app-body .tv-shows .tv-show {
+        overflow: hidden;
+        padding: 30px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        background-color: #fff;
+        box-sizing: border-box;
+        position: relative;
+        font-size: 16px; }
+        #app-container #app-body .tv-shows .tv-show:hover {
+          background-color: #ecf0f1; }
+        #app-container #app-body .tv-shows .tv-show.liked {
+          background-color: #ecf0f1; }
+        #app-container #app-body .tv-shows .tv-show .img-container {
+          padding: 0; }
+          #app-container #app-body .tv-shows .tv-show .img-container img {
+            max-height: 100%;
+            display: block;
+            margin: 0 auto; }
+        #app-container #app-body .tv-shows .tv-show .info {
+          padding-left: 30px; }
+          #app-container #app-body .tv-shows .tv-show .info h1 {
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: -1px;
+            font-weight: 400;
+            font-size: 30px; }
+          #app-container #app-body .tv-shows .tv-show .info button.ion-ios-heart {
+            display: inline-block;
+            float: left;
+            border: 0;
+            text-shadow: 0;
+            outline: 0;
+            background-color: transparent;
+            font-size: 20px;
+            color: #606060;
+            text-align: center;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 0;
+            transition: all 0.2s ease; }
+            #app-container #app-body .tv-shows .tv-show .info button.ion-ios-heart.like {
+              color: #00bd9d;
+              font-size: 30px;
+              top: 5px;
+              right: 5px; }
+  #app-container #app-footer {
+    width: 100%;
+    min-height: 10vh; }
+    #app-container #app-footer p {
+      margin: 0 auto;
+      width: 40%;
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #7f8c8d; }
+
+@media screen and (max-width: 767px) {
+  #app-container #app-body .tv-shows .tv-show .info h1 {
+    text-align: center;
+    margin-left: -15px; } }
+
+/*# sourceMappingURL=styles.css.map */
